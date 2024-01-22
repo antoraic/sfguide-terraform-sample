@@ -20,3 +20,10 @@ resource "snowflake_warehouse" "warehouse" {
   warehouse_size = "large"
   auto_suspend   = 60
 }
+
+
+resource "snowflake_warehouse" "warehouse" {
+  name           = "TF_DEMO_2"
+  warehouse_size = "small"
+  auto_suspend   = 60
+}
